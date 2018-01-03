@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+<head>
+  <title>Student Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">JOB Portal</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Login</a></li>
+      <li class="active"><a href="studentreg.html">Student Registration</a></li>
+      <li><a href="facultyreg.html">Faculty Registration</a></li>
+    </ul>
+  </div>
+</nav> 
+
+<div class="container">  
+    <img class="img-responsive" src="http://www.educationplanner.org/images/landing-page/promo-students.jpg" alt="StudentsImage" width="1200" height="300"> 
+  <form action="sturegistration.jsp" method = "POST" target = "_blank">
+    <div class="form-group">
+      <label for="usr">UserName :</label>
+      <span class="glyphicon glyphicon-user"></span>
+      <input type="text" class="form-control" id="usr" name="username">
+    </div>
+    <div class="form-group">
+      <label for="studentid">Student ID :</label>
+      <input type="text" class="form-control" id="studentid" name="studentid" >
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <span class="glyphicon glyphicon-lock"></span>
+      <input type="password" class="form-control" id="pwd" name="password">
+    </div>
+    <div class="form-group">
+      <label for="pwd1">Re-enter Password:</label>
+      <span class="glyphicon glyphicon-lock"></span>
+      <input type="password" class="form-control" id="pwd1" name="reenter_password">
+    </div>
+    <div class="form-group">
+      <label for="phone">phone :</label>
+      <span class="glyphicon glyphicon-iphone"></span>
+      <input type="text" class="form-control" id="phone" name="phonenumber">
+    </div>
+    <div class="form-group">
+      <label for="usr">Email :</label>
+      <span class="glyphicon glyphicon-envelope"></span>
+      <input type="email" class="form-control" id="email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="usr">GPA :</label>
+      
+      <input type="text" class="form-control" id="gpa" name="gpa">
+    </div>
+    <div class="form-group">
+      <label for="photo">photo :</label>
+      <span class="glyphicon glyphicon-file"></span>
+      <input type="file" class="form-control" id="photo" name="photo">
+    </div>
+     <div class="form-group">
+      <label for="department">department :</label>
+      <span class="glyphicon glyphicon-user"></span>
+      <input type="text" class="form-control" id="department" name="department">
+    </div>
+    <div class="form-group">
+      <input type="submit" class="btn btn-info" value="register">
+    </div>
+  </form>
+</div>
+</body>
+</html>
